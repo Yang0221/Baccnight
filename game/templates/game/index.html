@@ -1,0 +1,16 @@
+{% extends 'layouts/base.html' %}
+{% block title %}Game{% endblock title %}
+{% block content %}
+    <h1>Game page  |  {{levels|length}} Levels</h1>
+    {% for level in levels %}
+        <article>
+            <a href="{% url 'game:show' level.id%}"><h1>{{level.title}}</h1></a>
+            <p>{{level.body}}</p>
+        </article>
+        {% if not forloop.last%}
+            <hr>
+        {% endif %}
+        {% empty %}
+            <p>No level available</p>
+    {% endfor %}
+{% endblock content %}
