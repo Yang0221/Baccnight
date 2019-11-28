@@ -3,7 +3,7 @@ li a{
     color: white;
 }
 * {
-    font-family: 'Acme', sans-serif;    
+    font-family:  'Montserrat', sans-serif;    
 }
 
 #nabvarr {
@@ -22,10 +22,14 @@ li a{
     font-family: 'Acme', sans-serif;
 }
 #btmjouer{
-    margin-left: 37%;
+    /* margin-left: 37%; */
+    background-color: #f3f7fb;
+    color: #0B3C49;
 }
 #btmcontinuer{
-    margin-left: 32.5%;
+    /* margin-left: 32.5%; */
+    background-color: #f3f7fb;
+    color: #0B3C49;
 }
 
 /* #background_div{
@@ -64,6 +68,8 @@ li a{
 
 #texte {
     display: inline;
+    text-transform: uppercase;
+    font-size: small;
     /* margin-left: 3%; */
     /* margin-left: 3%;
     margin-right: 3%; */
@@ -90,7 +96,50 @@ li a{
 }
 #carde{
     display: inline;
-    margin-right: 2%;
-    background-color: #0B3C49;
-    color: white;
+    margin : 2% 2% 2% 2% ;
+    
+    /* background-color: #0B3C49; */
+    /* color: white; */
+    /* border: #0B3C49 solid 5px; */
+    
 }
+
+#detimg {
+    margin: 2% 2% 2% 2%;
+}
+
+#game_container{
+    margin-top: 10%;
+}
+
+.card-footer{
+    background: #f3f7fb;
+}
+
+.card-title {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+}
+
+/* #separation {
+    width: 100% ; 
+    display: inline;
+}
+
+#ligne{
+    width: 100px;
+    height: 4px;
+    background-color: #0B3C49;
+    border: none; /*on supprime le style par défaut
+    display: inline;
+} */
+
+/* 
+.moncercle{
+    display: inline;
+    border-radius:50%;
+    width: 15%;
+    height: 15%;
+    border:2px solid #0B3C49; 
+    margin-left: 43%;
+} */
