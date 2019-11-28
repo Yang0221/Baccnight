@@ -11,3 +11,6 @@ def show(request , id):
     except Level.DoesNotExist:
         raise Http404(id)
     return render(request , 'game/level.html', { 'level' : level})
+
+def form_user(request):
+    return render(request , 'game/form_user.html')

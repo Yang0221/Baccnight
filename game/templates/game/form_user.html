@@ -1,0 +1,19 @@
+{% extends 'layouts/base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <form>
+                    <div class="form-group">
+                        <label for="pseudo" id="lblpseudo">Pseudo</label>
+                        <input type="text" class="form-control" id="pseudo" placeholder="Pseudo">
+                    </div>
+                    <a href="{% url 'game:show' id=1 %}" class="btn btn-outline-success btn-md" id="btmpseudo" role="button" aria-pressed="true">Submit</a>
+                    <!-- <button id="btmpseudo" type="submit" class="btn btn-primary">Submit</button> -->
+                </form>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+{% endblock%}

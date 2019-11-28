@@ -1,10 +1,11 @@
 {% extends 'layouts/base.html' %}
 {% block title %}Game{% endblock title %}
 {% block content %}
-    <h1>Game page  |  {{levels|length}} Levels</h1>
+    <!-- <h1>Game page  |  {{levels|length}} Levels</h1>
     {% for level in levels %}
         <article>
             <a href="{% url 'game:show' level.id%}"><h1>{{level.title}}</h1></a>
+            
             <p>{{level.body}}</p>
         </article>
         {% if not forloop.last%}
@@ -12,5 +13,15 @@
         {% endif %}
         {% empty %}
             <p>No level available</p>
-    {% endfor %}
+    {% endfor %} -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <a href="{% url 'game:form_user' %}" id="btmjouer" class="btn btn-outline-success btn-md" role="button" aria-pressed="true">Jouer</a></br></br>
+                <a href="#" id="btmcontinuer" class="btn btn-outline-success btn-md" role="button" aria-pressed="true">Continuer</a>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
 {% endblock content %}

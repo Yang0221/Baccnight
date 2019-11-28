@@ -37,10 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'game.apps.GameConfig',
 
+    'crispy_forms', #boostrap_4
     #'django_extensions',
+
+    'game.apps.GameConfig',   
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4' #boostrap_4
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -123,5 +127,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static") ,
+    os.path.join(BASE_DIR, "mysite/static") ,
 )
