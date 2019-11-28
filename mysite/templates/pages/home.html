@@ -1,8 +1,10 @@
 {% extends 'layouts/base.html' %}
-
+{% load crispy_forms_tags %}
 {% block title %}Home{% endblock%}
 
 {% block content %}
     <h1>Home page</h1>
-    <a href="{% url 'game:index'%}"><h2>Game Page</h2></a>
+    
+    
+    <a href="{% url 'game:index' %}"><h2>Game Page</h2></a>
 {% endblock%}

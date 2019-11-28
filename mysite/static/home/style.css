@@ -1,0 +1,96 @@
+li a{
+    margin-right: 10px;
+    color: white;
+}
+* {
+    font-family: 'Acme', sans-serif;    
+}
+
+#nabvarr {
+    background-color: #0B3C49;
+    margin-bottom: 50px;
+}    
+
+#btmpseudo {
+    margin-left: 37%;
+}
+
+#lblpseudo {
+    margin-left: 37%;
+    text-transform: uppercase ;
+    text-decoration-color: #0B3C49;
+    font-family: 'Acme', sans-serif;
+}
+#btmjouer{
+    margin-left: 37%;
+}
+#btmcontinuer{
+    margin-left: 32.5%;
+}
+
+/* #background_div{
+    height: 50px;
+    width: 350px;
+    background-color: red;
+} */
+
+/* #to_inline{
+    display: inline;
+    
+
+} */
+#nombre {
+    display: inline;
+    float: left;
+    /* margin-top: 1.5%; */
+    /* float: left; */
+}
+/* #inline {
+    display: inline;
+    margin-right: 0px;
+} */
+/* .row{overflow:hidden;} */
+ .card-header{
+    font-size: 20px;
+} 
+#etoile {
+    display: inline;
+    float: left;
+    margin-top: 1.5%;
+    margin-right: 5%;
+    /* margin-right: 7%; */
+    /* float: left; */
+}
+
+#texte {
+    display: inline;
+    /* margin-left: 3%; */
+    /* margin-left: 3%;
+    margin-right: 3%; */
+}
+
+#indice {
+    display: inline;
+    
+    float: right;
+    margin-top: 1.5%;
+    /* float: center; */
+}
+
+#question {
+    
+    display: inline;
+    margin-left: 3%;
+    float: right;
+    margin-top: 1.5%;
+}
+#nav{
+    background-color: #0B3C49;
+    color: white;
+}
+#carde{
+    display: inline;
+    margin-right: 2%;
+    background-color: #0B3C49;
+    color: white;
+}
