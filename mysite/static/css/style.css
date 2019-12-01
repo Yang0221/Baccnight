@@ -12,15 +12,16 @@ li a{
 }    
 
 #btmpseudo {
-    margin-left: 37%;
+    background-color: #f3f7fb;
+    color: #0B3C49;
 }
 
-#lblpseudo {
-    margin-left: 37%;
+#lblpseud {
     text-transform: uppercase ;
-    text-decoration-color: #0B3C49;
-    font-family: 'Acme', sans-serif;
+    color: #f3f7fb;
+    
 }
+
 #btmjouer{
     /* margin-left: 37%; */
     background-color: #f3f7fb;
@@ -43,12 +44,7 @@ li a{
     
 
 } */
-#nombre {
-    display: inline;
-    float: left;
-    /* margin-top: 1.5%; */
-    /* float: left; */
-}
+
 /* #inline {
     display: inline;
     margin-right: 0px;
@@ -57,39 +53,69 @@ li a{
  .card-header{
     font-size: 20px;
 } 
+
+
+/*********************************************************************/
+#nombre {
+    display: inline;
+    float: left;
+    /* margin-top: 1.5%; */
+    /* float: left; */
+}
 #etoile {
     display: inline;
     float: left;
     margin-top: 1.5%;
-    margin-right: 5%;
-    /* margin-right: 7%; */
-    /* float: left; */
+    margin-right: 3%;
 }
-
 #texte {
     display: inline;
     text-transform: uppercase;
-    font-size: small;
+    font-size:small;
     /* margin-left: 3%; */
     /* margin-left: 3%;
     margin-right: 3%; */
 }
-
 #indice {
     display: inline;
-    
     float: right;
     margin-top: 1.5%;
-    /* float: center; */
 }
 
 #question {
-    
     display: inline;
     margin-left: 3%;
     float: right;
     margin-top: 1.5%;
 }
+
+
+ /* h6{
+    max-width: 30%;
+    margin-right: 20%; 
+
+}  */
+ /* #mondename{
+    background-color:red;
+    /* margin: 0% 20% 0% 20%;  
+}  */
+
+/* #nombre_etoile{
+    display: inline;
+    float : left ;
+    width: 20%;
+    background-color: red;
+} */
+
+/* #question_indice{
+    display: inline;
+    float: right;
+    width: 20%;
+    background-color:green;
+} */
+
+
+/*********************************************************************/
 #nav{
     background-color: #0B3C49;
     color: white;
