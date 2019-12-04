@@ -135,7 +135,9 @@ li a{
 }
 
 #game_container{
-    margin-top: 10%;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 .card-footer{
