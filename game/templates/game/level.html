@@ -5,6 +5,46 @@
 
 {% block nav %}{% endblock %}
 {% block content %}
+
+<script type="text/javascript">
+
+function getCoordinate(event)
+{
+    var x = event.clientX ;
+    var y = event.clientY;
+    return {x : x, y : y};
+}
+
+function checkCoordinate(x, y){
+    var solidX = 755;
+    var solidY = 450;
+    if( (x < solidX + 15) && (x > solidX - 15) && (y < solidY + 15) && (y > solidY + 15)){
+        return true;
+    }
+    return false;
+}
+
+function check(detimg, event){
+    document.getElementById(detimg).style.border = "solid 5px #c9e265";
+    //   var x = (event.clientX) - (document.getElementById('tableau').offsetWidth);
+    //  console.log("width :" +  document.getElementById('tableau').offsetWidth
+    //  + "\n height : " + document.getElementById('tableau').offsetHeight
+    //  + "\n x : " + event.clientX + "\n y : " + event.clientY
+    //  + "\n top position : " + document.getElementById('tableau').offsetTop
+    // );
+    //var coordinates = getCoordinate(event);
+    //console.log("x : " + coordinates.x + " y : " + coordinates.y);
+    //if(checkCoordinate(x, coordinates.y)){
+
+    //}
+
+    //document.getElementById(detimg).setAttribute("class","check");
+}
+
+</script>
+
+
+
     <div class="container" id="game_container">
         <div class="row">
             <div class="col-md-4"></div>
@@ -25,7 +65,7 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">LA CHASSE DE MÉLÉAGRE</h5>
                         <div class="imagecontainer">
-                            <img src="{% static 'images/' %}{{level.image}}" width="100%">
+                            <img id="painting" src="{% static 'images/' %}{{level.image}}" width="100%" onclick="check('detimg',event)">
                         </div>
 
         

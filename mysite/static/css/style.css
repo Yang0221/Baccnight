@@ -1,3 +1,7 @@
+.check{
+    border: solid 5px #c9e265;
+}
+
 li a{
     margin-right: 10px;
     color: white;
@@ -134,6 +138,9 @@ li a{
     margin: 2% 2% 2% 2%;
 }
 
+#painting{
+    filter : blur(2px);
+}
 #game_container{
     margin: 0;
     padding: 0;
