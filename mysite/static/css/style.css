@@ -142,7 +142,7 @@ li a{
     filter : blur(2px);
 }
 #game_container{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     border: 0;
 }

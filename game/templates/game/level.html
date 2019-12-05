@@ -25,7 +25,8 @@ function checkCoordinate(x, y){
 }
 
 function check(detimg, event){
-    document.getElementById(detimg).style.border = "solid 5px #c9e265";
+    //document.getElementById(detimg).style.border = "solid 5px #c9e265";
+    document.getElementById(detimg).setAttribute("class", "check");
     //   var x = (event.clientX) - (document.getElementById('tableau').offsetWidth);
     //  console.log("width :" +  document.getElementById('tableau').offsetWidth
     //  + "\n height : " + document.getElementById('tableau').offsetHeight
