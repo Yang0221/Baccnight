@@ -1,20 +1,23 @@
-.check{
-    border: solid 5px #c9e265;
+/***************************** general *************************/
+* {
+    font-family:  'Montserrat', sans-serif;    
+}
+#nabvarr {
+    background-color: #0B3C49;
+    margin-bottom: 50px;
 }
 
+#game_container{
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+}
 li a{
     margin-right: 10px;
     color: white;
 }
-* {
-    font-family:  'Montserrat', sans-serif;    
-}
 
-#nabvarr {
-    background-color: #0B3C49;
-    margin-bottom: 50px;
-}    
-
+/******************** formulaire utilisateur ********************/
 #btmpseudo {
     background-color: #f3f7fb;
     color: #0B3C49;
@@ -22,49 +25,33 @@ li a{
 
 #lblpseud {
     text-transform: uppercase ;
-    color: #f3f7fb;
-    
+    color: #f3f7fb;   
 }
 
+
+/******************** le fichier index  ********************/
 #btmjouer{
-    /* margin-left: 37%; */
     background-color: #f3f7fb;
     color: #0B3C49;
 }
 #btmcontinuer{
-    /* margin-left: 32.5%; */
     background-color: #f3f7fb;
     color: #0B3C49;
 }
 
-/* #background_div{
-    height: 50px;
-    width: 350px;
-    background-color: red;
-} */
+/********************* le fichier level ******************************/
 
-/* #to_inline{
-    display: inline;
-    
-
-} */
-
-/* #inline {
-    display: inline;
-    margin-right: 0px;
-} */
-/* .row{overflow:hidden;} */
- .card-header{
+/********** card-header *************/
+.card-header{
     font-size: 20px;
-} 
-
-
-/*********************************************************************/
+}
+#nav{
+    background-color: #0B3C49;
+    color: white;
+}
 #nombre {
     display: inline;
     float: left;
-    /* margin-top: 1.5%; */
-    /* float: left; */
 }
 #etoile {
     display: inline;
@@ -76,9 +63,6 @@ li a{
     display: inline;
     text-transform: uppercase;
     font-size:small;
-    /* margin-left: 3%; */
-    /* margin-left: 3%;
-    margin-right: 3%; */
 }
 #indice {
     display: inline;
@@ -92,89 +76,32 @@ li a{
     float: right;
     margin-top: 1.5%;
 }
-
-
- /* h6{
-    max-width: 30%;
-    margin-right: 20%; 
-
-}  */
- /* #mondename{
-    background-color:red;
-    /* margin: 0% 20% 0% 20%;  
-}  */
-
-/* #nombre_etoile{
-    display: inline;
-    float : left ;
-    width: 20%;
-    background-color: red;
-} */
-
-/* #question_indice{
-    display: inline;
-    float: right;
-    width: 20%;
-    background-color:green;
-} */
-
-
-/*********************************************************************/
-#nav{
-    background-color: #0B3C49;
-    color: white;
-}
-#carde{
-    display: inline;
-    margin : 2% 2% 2% 2% ;
-    
-    /* background-color: #0B3C49; */
-    /* color: white; */
-    /* border: #0B3C49 solid 5px; */
-    
-}
-
-#detimg {
-    margin: 2% 2% 2% 2%;
-}
-
-#painting{
-    filter : blur(2px);
-}
-#game_container{
-    margin: 0 auto;
-    padding: 0;
-    border: 0;
-}
-
-.card-footer{
-    background: #f3f7fb;
-}
-
+/********** card-body *************/
 .card-title {
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
 }
-
-/* #separation {
-    width: 100% ; 
+#detimg {
+    margin: 2% 2% 2% 2%;
+}
+.painting{
+    filter : blur(2px);
+}
+.check{
+    border: solid 5px #c9e265;
+}
+/********** card-footer ***********/
+.card-footer{
+    background: #f3f7fb;
+}
+#carde{
     display: inline;
+    margin : 2% 2% 2% 2% ;   
 }
 
-#ligne{
-    width: 100px;
-    height: 4px;
-    background-color: #0B3C49;
-    border: none; /*on supprime le style par défaut
-    display: inline;
-} */
 
-/* 
-.moncercle{
-    display: inline;
-    border-radius:50%;
-    width: 15%;
-    height: 15%;
-    border:2px solid #0B3C49; 
-    margin-left: 43%;
-} */
+
+
+
+
+
