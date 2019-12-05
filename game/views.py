@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Level
+from .models import World
 from django.http import Http404
 
 def index(request):
@@ -10,7 +11,7 @@ def show(request , id):
         level = Level.objects.get(id=id)
     except Level.DoesNotExist:
         raise Http404(id)
-    return render(request , 'game/level.html', { 'level' : level})
+    return render(request , 'game/level.html', { 'level' : level })
 
 def form_user(request):
     return render(request , 'game/form_user.html')
