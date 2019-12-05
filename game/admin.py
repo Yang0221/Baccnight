@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Level
-from .models import Player
+from . import models
 
 
-admin.site.register(Level)
-admin.site.register(Player)
+admin.site.register(models.Level)
+admin.site.register(models.Player)
+admin.site.register(models.Detail)
