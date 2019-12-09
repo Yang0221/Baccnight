@@ -84,7 +84,7 @@ li a{
 #detimg {
     margin: 2% 2% 2% 2%;
 }
-.painting{
+#painting{
     filter : blur(2px);
 }
 .check{
