@@ -1,6 +1,6 @@
 /***************************** general *************************/
 * {
-    font-family:  'Montserrat', sans-serif;    
+    font-family:  'Montserrat', sans-serif;
 }
 #nabvarr {
     background-color: #0B3C49;
@@ -25,7 +25,7 @@ li a{
 
 #lblpseud {
     text-transform: uppercase ;
-    color: #f3f7fb;   
+    color: #f3f7fb;
 }
 
 
@@ -96,8 +96,5 @@ li a{
 }
 #carde{
     display: inline;
-    margin : 2% 2% 2% 2% ;   
+    margin : 2% 2% 2% 2% ;
 }
-
-
-

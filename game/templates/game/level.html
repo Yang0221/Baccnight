@@ -19,17 +19,22 @@
                 <div class="card">
                     <div id="nav" class="card-header" >
                             <h3 id="nombre" >0</h3>
-                            <i id="etoile" class="fas fa-star" ></i> 
+                            <i id="etoile" class="fas fa-star" ></i>
                             <i id="question"class="far fa-question-circle" ></i>
-                            <i id="indice"class="fas fa-lightbulb"></i>       
-                        
+                            <i onclick="javascript:open_infos();" id="indice" onclick="openIndice()" class="fas fa-lightbulb"></i>
+                            <script type="text/javascript">
+                                 function open_infos(){
+                                   window.open('indice.html','PopupIndice','menubar=no, scrollbars=no, top=auto, left=auto, width=300, height=200');
+                                 }
+                            </script>
+
                         <div class="card" style="background-color:#0B3C49; width: 67%;">
                             <h6  class="text-center" id="texte">{{level.world.name}}</h6>
                         </div>
                     </div>
-                    <div class="card-body" >    
+                    <div class="card-body" >
                         <h5 class="card-title text-center">{{level.name}}</h5>
-                        
+
                         <div class="imagecontainer" style="position: relative;">
                             <img id="painting" src="{% static 'images/' %}{{level.image}}" width="100%" onclick="check('detimg',event)">
                         </div>
@@ -44,7 +49,7 @@
                         {% endfor %}
                         <br>
                     </div>
-                </div>    
+                </div>
             </div>
             <div class="col-md-4"></div>
         </div>

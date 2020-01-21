@@ -38,10 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'crispy_forms', #boostrap_4
+    #'crispy_forms', #boostrap_4
     #'django_extensions',
 
-    'game.apps.GameConfig',   
+    'game.apps.GameConfig',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4' #boostrap_4

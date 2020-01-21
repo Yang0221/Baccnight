@@ -16,7 +16,7 @@ function checkCoordinate(x, y){
 
 function check(detimg, event){
     //document.getElementById(detimg).style.border = "solid 5px #c9e265";
-    
+
     var height = document.getElementById('painting').offsetHeight / 10;
     var width = document.getElementById('painting').offsetWidth / 10;
 
@@ -25,7 +25,7 @@ function check(detimg, event){
     var viewportOffset = painting.getBoundingClientRect();
     // these are relative to the viewport, i.e. the window
     var top = viewportOffset.top;
-    
+
     var left = viewportOffset.left;
     var xup = left + (3*width);
     var xdown = left + (4*width);
@@ -38,10 +38,6 @@ function check(detimg, event){
         console.log('ok');
         document.getElementById(detimg).setAttribute("class", "check");
     }
-    
-
-
-
 
     console.log(" x : " + event.clientX + "\n y : " + event.clientY);
     //  var x = (event.clientX) - (document.getElementById('tableau').offsetWidth);
@@ -53,8 +49,15 @@ function check(detimg, event){
     //var coordinates = getCoordinate(event);
     //console.log("x : " + coordinates.x + " y : " + coordinates.y);
     //if(checkCoordinate(x, coordinates.y)){
-
     //}
-
     //document.getElementById(detimg).setAttribute("class","check");
+
+    // Popup for indice
+    /*var indice = document.getElementById('PopupIndice');
+    function openIndice() {
+          indice.style.top = "0px";
+    }
+    function closeIndice() {
+          indice.style.top = "-300px";*/
+    }
 }
