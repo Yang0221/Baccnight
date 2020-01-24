@@ -58,6 +58,6 @@ function check(detimg, event){
           indice.style.top = "0px";
     }
     function closeIndice() {
-          indice.style.top = "-300px";*/
-    }
+          indice.style.top = "-300px";
+    }*/
 }
