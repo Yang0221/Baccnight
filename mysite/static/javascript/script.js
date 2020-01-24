@@ -17,6 +17,9 @@ function checkCoordinate(x, y){
 function check(detimg, event){
     //document.getElementById(detimg).style.border = "solid 5px #c9e265";
 
+    console.log(a);
+
+
     var height = document.getElementById('painting').offsetHeight / 10;
     var width = document.getElementById('painting').offsetWidth / 10;
 

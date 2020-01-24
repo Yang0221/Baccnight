@@ -13,6 +13,11 @@ class Player(models.Model):
     nb_stars = models.IntegerField()            #min & max
     time = models.IntegerField()
     id_level = models.ForeignKey('Level' ,on_delete=models.CASCADE)
+    detail1 = models.BooleanField(default=False)
+    detail2 = models.BooleanField(default=False)
+    detail3 = models.BooleanField(default=False)
+    detail4 = models.BooleanField(default=False)
+    detail5 = models.BooleanField(default=False)
     
     def __str__(self):
         return self.login
