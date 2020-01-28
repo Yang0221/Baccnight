@@ -61,18 +61,21 @@
                 <div id="popup">
                     <div class="card-body text-center " >
                       <i id="close"class="far fa-window-close" onclick="closePopUpClue()"></i>
-                      <p class=" text-center">Choisir un détail</p>
+                      <p class=" text-center">Choisir le détail </p>
                       <!--For d in notFoundDetails-->
                       {% for d in detail %}
                           <div id="carde" ><img id="detimg" src="{% static 'images/' %}{{d.image}}" onclick="OpenClueText()"></div>
                       {% endfor %}
-                      <div id="clueText"> Tu n'as pas besoin d'aide. <br> Ouvre bien tes yeux.</div>
+                      <!--div id="clueText"> Tu n'as pas besoin d'aide. <br> Ouvre bien tes yeux.</div-->
 
-                      <div class="row " id="buttons">
+                      <div class="row " id="clueText">
+                          <div >Tu n'as pas besoin d'aide. <br> Ouvre bien tes yeux.</div>
+                          <div class="row ">
                           <div class="col-md-3"> </div>
                           <div class="col-md-3"> <button type="button" name="button" onclick="CloseClueText()"> Annuler </button> </div>
-                          <div class="col-md-3"> <button type="button" name="button"  onclick="OpenClueText()"> Valider </button> </div>
+                          <div class="col-md-3"> <button type="button" name="button"  onclick="CloseClueText()"> Valider </button> </div>
                           <div class="col-md-3">  </div>
+                          </div>
                       </div>
                     </div>
                 </div>
