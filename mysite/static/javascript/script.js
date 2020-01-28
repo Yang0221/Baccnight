@@ -64,3 +64,21 @@ function check(detimg, event){
           indice.style.top = "-300px";
     }*/
 }
+function openPopUpClue(){
+    document.getElementById('popup').style.display = 'block';
+}
+function closePopUpClue(){
+    document.getElementById('popup').style.display = 'none';
+}
+function OpenClueText(){
+    document.getElementById('clueText').style.display = 'block';
+}
+function CloseClueText(){
+    document.getElementById('clueText').style.display = 'none';
+}
+function OpenNoCluePopUp(){
+    document.getElementById('noClueAvalaible').style.display = 'block';
+}
+function CloseNoCluePopUp(){
+    document.getElementById('noClueAvalaible').style.display = 'none';
+}

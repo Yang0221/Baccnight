@@ -25,13 +25,9 @@
                     <div id="nav" class="card-header" >
                             <h3 id="nombre" >0</h3>
                             <i id="etoile" class="fas fa-star" ></i>
-                            <i id="question"class="far fa-question-circle" ></i>
-                            <i onclick="javascript:open_infos();" id="indice" onclick="openIndice()" class="fas fa-lightbulb"></i>
-                            <script type="text/javascript">
-                                 function open_infos(){
-                                   window.open('indice.html','PopupIndice','menubar=no, scrollbars=no, top=auto, left=auto, width=300, height=200');
-                                 }
-                            </script>
+                            <i id="question"class="far fa-question-circle" onclick="OpenNoCluePopUp()"></i>
+                            <i id="indice" onclick="openPopUpClue()"  class="fas fa-lightbulb"></i>
+
 
                         <div class="card" style="background-color:#0B3C49; width: 67%;">
                             <h6  class="text-center" id="texte">{{level.world.name}}</h6>
@@ -58,5 +54,38 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-    </div>
+        <!-- indice à mettre ailleurs -->
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div id="popup">
+                    <div class="card-body text-center " >
+                      <i id="close"class="far fa-window-close" onclick="closePopUpClue()"></i>
+                      <p class=" text-center">Choisir un détail</p>
+                      <!--For d in notFoundDetails-->
+                      {% for d in detail %}
+                          <div id="carde" ><img id="detimg" src="{% static 'images/' %}{{d.image}}" onclick="OpenClueText()"></div>
+                      {% endfor %}
+                      <div id="clueText"> Tu n'as pas besoin d'aide. <br> Ouvre bien tes yeux.</div>
+
+                      <div class="row " id="buttons">
+                          <div class="col-md-3"> </div>
+                          <div class="col-md-3"> <button type="button" name="button" onclick="CloseClueText()"> Annuler </button> </div>
+                          <div class="col-md-3"> <button type="button" name="button"  onclick="OpenClueText()"> Valider </button> </div>
+                          <div class="col-md-3">  </div>
+                      </div>
+                    </div>
+                </div>
+             </div>
+       </div>
+       <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="card-body text-center " id="noClueAvalaible" >
+                    <i id="question"class="far fa-window-close" onclick="CloseNoCluePopUp()"></i>
+                      Oups tu n'as pas assez d'étoiles
+                </div>
+            </div>
+        </div>
+  </div>
 {% endblock content %}

@@ -98,3 +98,44 @@ li a{
     display: inline;
     margin : 2% 2% 2% 2% ;
 }
+/*************Pop up *******************/
+#popup {
+  font-family: 'Quicksand', sans-serif;
+  font-size:small;
+  color: white;
+  background-color: #0B3C49;
+  width:  100%;
+  display: none;
+  border-style: ridge;
+}
+
+#imgclue {
+    margin: 2% 2% 2% 2%;
+}
+
+#clueText {
+    display: none;
+    background: #f3f7fb;
+    color : black;
+    border-style: ridge;
+    margin-top: 2%;
+}
+#noClueAvalaible{
+   font-family: 'Quicksand', sans-serif;
+   font-size:small;
+   color: #0B3C49;
+   background-color:#f3f7fb;
+   width:  100%;
+   display: none;
+   border-style: ridge;
+}
+#close {
+    display: inline;
+    margin-left: 3%;
+    float: right;
+    margin-top: 1.5%;
+}
+
+#buttons{
+     margin-top: 2%;
+}
